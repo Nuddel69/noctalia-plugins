@@ -3,6 +3,7 @@
     "settings": "Ustawienia widgetu"
   },
   "panel": {
+    "auth-error": "Uwierzytelnij się, aby używać tej wtyczki: ",
     "issues": "Zgłoszenia",
     "mr": "Żądania scalenia",
     "open-settings": "Otwórz ustawienia wtyczki",

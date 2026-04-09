@@ -3,6 +3,7 @@
     "settings": "Cài đặt tiện ích"
   },
   "panel": {
+    "auth-error": "Vui lòng xác thực để sử dụng plugin này bằng ",
     "issues": "Vấn đề",
     "mr": "Yêu cầu hợp nhất",
     "open-settings": "Mở cài đặt plugin",

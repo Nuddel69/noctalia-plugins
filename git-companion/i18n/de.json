@@ -3,6 +3,7 @@
     "settings": "Widget Einstellungen"
   },
   "panel": {
+    "auth-error": "Bitte authentifizieren Sie sich, um dieses Plugin zu verwenden: ",
     "issues": "Issues",
     "mr": "Merge Requests",
     "open-settings": "Plugin-Einstellungen öffnen",

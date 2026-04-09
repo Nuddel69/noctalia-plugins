@@ -11,6 +11,7 @@
     "issues": "Issues",
     "mr": "Merge Requests",
     "pr": "Pull Requests",
+    "auth-error": "Please authenticate to use this plugin, using ",
     "open-settings": "Open Plugin Settings",
     "refresh": "Refresh"
   },

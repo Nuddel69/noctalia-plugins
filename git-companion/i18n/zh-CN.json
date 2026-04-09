@@ -3,6 +3,7 @@
     "settings": "小部件设置"
   },
   "panel": {
+    "auth-error": "请使用以下命令进行身份验证以使用此插件：",
     "issues": "问题",
     "mr": "合并请求",
     "open-settings": "打开插件设置",

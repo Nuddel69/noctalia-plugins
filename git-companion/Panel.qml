@@ -304,15 +304,43 @@ Item {
 
                     // Error message
                     NBox {
-                        id: erroBox
-
                         Layout.fillWidth: true
-                        Layout.preferredHeight: emptyColumn.implicitHeight + Style.margin2M
-                        visible: !root.isBinInstalled || !root.isAuthenticated
+                        Layout.preferredHeight: binError.implicitHeight + Style.margin2M
+                        visible: !root.isBinInstalled
 
                         // Error Title
                         ColumnLayout {
-                            id: emptyColumn
+                            id: binError
+
+                            anchors.fill: parent
+                            anchors.margins: Style.marginM
+                            spacing: Style.marginL
+
+                            NIcon {
+                                Layout.alignment: Qt.AlignHCenter
+                                color: Color.mOnSurfaceVariant
+                                icon: platform === 'gitlab' ? "brand-gitlab" : "brand-github"
+                                pointSize: Style.fontSizeXXL
+                            }
+                            NText {
+                                Layout.fillWidth: true
+                                color: Color.mOnSurfaceVariant
+                                horizontalAlignment: Text.AlignHLeft
+                                pointSize: Style.fontSizeL
+                                text: bin + " is not installed. Please install it to use this plugin."
+                                wrapMode: Text.WordWrap
+                            }
+                        }
+                    }
+
+                    NBox {
+                        Layout.fillWidth: true
+                        Layout.preferredHeight: authError.implicitHeight + Style.margin2M
+                        visible: root.isBinInstalled && !root.isAuthenticated
+
+                        // Error Title
+                        ColumnLayout {
+                            id: authError
 
                             anchors.fill: parent
                             anchors.margins: Style.marginM
@@ -322,14 +350,14 @@ Item {
                                 Layout.alignment: Qt.AlignHCenter
                                 color: Color.mOnSurfaceVariant
                                 icon: "user-exclamation"
-                                pointSize: 48
+                                pointSize: Style.fontSizeXXL
                             }
                             NText {
                                 Layout.fillWidth: true
                                 color: Color.mOnSurfaceVariant
                                 horizontalAlignment: Text.AlignHLeft
                                 pointSize: Style.fontSizeL
-                                text: !root.isBinInstalled ? bin + " is not installed. Please install it to use this plugin." : bin + " is not authenticated. Run '" + bin + " auth login' to authenticate."
+                                text: pluginApi?.tr("panel.auth-error") + bin + " auth login."
                                 wrapMode: Text.WordWrap
                             }
                         }

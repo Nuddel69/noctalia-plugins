@@ -3,6 +3,7 @@
     "settings": "小工具設定"
   },
   "panel": {
+    "auth-error": "請使用以下指令進行身份驗證以使用此插件：",
     "issues": "問題",
     "mr": "合併請求",
     "open-settings": "開啟插件設定",

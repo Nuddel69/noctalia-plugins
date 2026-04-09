@@ -3,6 +3,7 @@
     "settings": "Configurações do widget"
   },
   "panel": {
+    "auth-error": "Autentique-se para usar este plugin, utilizando ",
     "issues": "Issues",
     "mr": "Merge Requests",
     "open-settings": "Abrir configurações do plugin",

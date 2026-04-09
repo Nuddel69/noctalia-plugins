@@ -3,6 +3,7 @@
     "settings": "Widget ayarları"
   },
   "panel": {
+    "auth-error": "Bu eklentiyi kullanmak için kimlik doğrulaması yapın: ",
     "issues": "Sorunlar",
     "mr": "Birleştirme İstekleri",
     "open-settings": "Eklenti ayarlarını aç",
