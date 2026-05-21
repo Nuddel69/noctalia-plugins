@@ -1,0 +1,28 @@
+{
+  "id": "nightscout",
+  "name": "Nightscout Monitor",
+  "version": "1.0.0",
+  "minNoctaliaVersion": "3.6.0",
+  "author": "Mats Bjønnes",
+  "license": "MIT",
+  "repository": "https://github.com/noctalia-dev/noctalia-plugins",
+  "description": "Fetch information about blood glucose levels from Nightscout",
+  "tags": [
+    "Bar",
+    "Indicator",
+    "Utility",
+    "Niri"
+  ],
+  "entryPoints": {
+    "main": "Main.qml",
+    "barWidget": "BarWidget.qml",
+    "panel": "Panel.qml",
+    "settings": "Settings.qml"
+  },
+  "dependencies": {
+    "plugins": []
+  },
+  "metadata": {
+    "defaultSettings": {}
+  }
+}
